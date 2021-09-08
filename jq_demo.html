@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+//Refrences the jquery libary
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<script>
+$(document).ready(function() {
+	$("html").append(
+		"<body>\
+			<div id='container'>\
+				<div id='inner'>\
+					<h1>Basic jQuery</h1>\
+					<p id='1'>Paragraph 1</p>\
+					<p id='2'>Paragraph 2</p>\
+					<p id='3'>Paragraph 3</p>\
+				</div>\
+			</div>\
+		</body>"
+	);
+	
+	//Changes the color of #2 element
+	$("#2").css("color", "red");
+	
+	//If you click on #3 element, the h1 element will disappear
+	$("#3").click(function() {
+		$('h1').hide();
+		});
+});
+</script>
+</html>
